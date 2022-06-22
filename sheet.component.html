@@ -1,0 +1,11 @@
+<form action="">
+	<input type="file" name="file upload" accept=".xls, .xlsx"
+	(change)="fileUpload($event)">
+  </form>
+  <div>
+	<pre>
+	  {{convertedJson}}
+	</pre>
+  
+	<button (click)="onDownload()">Download</button>
+  </div>
